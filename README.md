@@ -1,0 +1,3 @@
+## Problem Statement
+
+A credit risk team at a lending company needs to screen and price loan applicants quickly and consistently. This project predicts a borrower's RiskScore from loan application data using linear regression. Success means beating the "predict the average" baseline and keeping the average error under about 10% of the score range. The data is synthetic, the results show relationships and not causes, and the score may come from a formula, so the model should be tested on real data before anyone relies on it.
