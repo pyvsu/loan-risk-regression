@@ -1,0 +1,304 @@
+{
+  "model_version": "v3",
+  "sklearn_version": "1.9.1",
+  "features": [
+    "Age",
+    "AnnualIncome",
+    "CreditScore",
+    "LoanAmount",
+    "LoanDuration",
+    "MonthlyDebtPayments",
+    "CreditCardUtilizationRate",
+    "DebtToIncomeRatio",
+    "BankruptcyHistory",
+    "PreviousLoanDefaults",
+    "PaymentHistory",
+    "LengthOfCreditHistory",
+    "TotalAssets",
+    "TotalLiabilities",
+    "EmploymentStatus_Self-Employed",
+    "EmploymentStatus_Unemployed",
+    "EducationLevel_Bachelor",
+    "EducationLevel_Doctorate",
+    "EducationLevel_High School",
+    "EducationLevel_Master",
+    "MaritalStatus_Widowed",
+    "HomeOwnershipStatus_Other",
+    "HomeOwnershipStatus_Rent",
+    "LoanPurpose_Debt Consolidation",
+    "LoanPurpose_Other"
+  ],
+  "numeric": {
+    "Age": {
+      "min": 18.0,
+      "median": 40.0,
+      "max": 80.0,
+      "is_int": true
+    },
+    "AnnualIncome": {
+      "min": 15000.0,
+      "median": 48206.5,
+      "max": 422480.0,
+      "is_int": true
+    },
+    "CreditScore": {
+      "min": 343.0,
+      "median": 579.0,
+      "max": 712.0,
+      "is_int": true
+    },
+    "LoanAmount": {
+      "min": 3674.0,
+      "median": 21968.0,
+      "max": 184732.0,
+      "is_int": true
+    },
+    "LoanDuration": {
+      "min": 12.0,
+      "median": 48.0,
+      "max": 120.0,
+      "is_int": true
+    },
+    "MonthlyDebtPayments": {
+      "min": 50.0,
+      "median": 401.0,
+      "max": 2501.0,
+      "is_int": true
+    },
+    "CreditCardUtilizationRate": {
+      "min": 0.0009744907528399,
+      "median": 0.26680868495784865,
+      "max": 0.9173800815542682,
+      "is_int": false
+    },
+    "DebtToIncomeRatio": {
+      "min": 0.0017200290084425,
+      "median": 0.26614338222120715,
+      "max": 0.9022526895282088,
+      "is_int": false
+    },
+    "BankruptcyHistory": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 1.0,
+      "is_int": true
+    },
+    "PreviousLoanDefaults": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 1.0,
+      "is_int": true
+    },
+    "PaymentHistory": {
+      "min": 8.0,
+      "median": 24.0,
+      "max": 45.0,
+      "is_int": true
+    },
+    "LengthOfCreditHistory": {
+      "min": 1.0,
+      "median": 15.0,
+      "max": 29.0,
+      "is_int": true
+    },
+    "TotalAssets": {
+      "min": 2098.0,
+      "median": 60878.5,
+      "max": 2612797.0,
+      "is_int": true
+    },
+    "TotalLiabilities": {
+      "min": 565.0,
+      "median": 22141.0,
+      "max": 1417302.0,
+      "is_int": true
+    }
+  },
+  "categorical": {
+    "EmploymentStatus": {
+      "options": [
+        "Employed",
+        "Self-Employed",
+        "Unemployed"
+      ],
+      "default": "Employed"
+    },
+    "EducationLevel": {
+      "options": [
+        "Associate",
+        "Bachelor",
+        "Doctorate",
+        "High School",
+        "Master"
+      ],
+      "default": "Bachelor"
+    },
+    "MaritalStatus": {
+      "options": [
+        "Divorced",
+        "Married",
+        "Single",
+        "Widowed"
+      ],
+      "default": "Married"
+    },
+    "HomeOwnershipStatus": {
+      "options": [
+        "Mortgage",
+        "Other",
+        "Own",
+        "Rent"
+      ],
+      "default": "Mortgage"
+    },
+    "LoanPurpose": {
+      "options": [
+        "Auto",
+        "Debt Consolidation",
+        "Education",
+        "Home",
+        "Other"
+      ],
+      "default": "Home"
+    }
+  },
+  "means": {
+    "Age": 39.81325,
+    "AnnualIncome": 58909.4184375,
+    "CreditScore": 571.7350625,
+    "LoanAmount": 24964.385875,
+    "LoanDuration": 54.19575,
+    "MonthlyDebtPayments": 454.320125,
+    "CreditCardUtilizationRate": 0.28637428996672054,
+    "DebtToIncomeRatio": 0.28725071653863726,
+    "BankruptcyHistory": 0.053,
+    "PreviousLoanDefaults": 0.099625,
+    "PaymentHistory": 24.0274375,
+    "LengthOfCreditHistory": 14.9766875,
+    "TotalAssets": 96485.6355,
+    "TotalLiabilities": 36305.912,
+    "EmploymentStatus_Self-Employed": 0.079125,
+    "EmploymentStatus_Unemployed": 0.070125,
+    "EducationLevel_Bachelor": 0.301625,
+    "EducationLevel_Doctorate": 0.0476875,
+    "EducationLevel_High School": 0.2981875,
+    "EducationLevel_Master": 0.1505625,
+    "MaritalStatus_Widowed": 0.0516875,
+    "HomeOwnershipStatus_Other": 0.100375,
+    "HomeOwnershipStatus_Rent": 0.3059375,
+    "LoanPurpose_Debt Consolidation": 0.252125,
+    "LoanPurpose_Other": 0.1005625
+  },
+  "target": {
+    "min": 28.8,
+    "max": 84.0,
+    "percentiles": [
+      28.8,
+      33.6,
+      35.2,
+      36.0,
+      36.8,
+      36.8,
+      37.6,
+      38.4,
+      38.4,
+      39.2,
+      39.2,
+      40.0,
+      40.0,
+      40.8,
+      40.8,
+      41.6,
+      41.6,
+      42.4,
+      42.4,
+      43.2,
+      43.2,
+      44.0,
+      44.8,
+      45.0,
+      46.0,
+      46.0,
+      46.4,
+      47.0,
+      47.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      49.0,
+      49.0,
+      49.0,
+      49.0,
+      50.0,
+      50.0,
+      50.0,
+      50.0,
+      50.0,
+      50.0,
+      51.0,
+      51.0,
+      51.0,
+      51.0,
+      51.0,
+      51.0,
+      52.0,
+      52.0,
+      52.0,
+      52.0,
+      52.0,
+      52.0,
+      52.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      54.0,
+      54.0,
+      54.0,
+      54.0,
+      54.0,
+      54.0,
+      55.0,
+      55.0,
+      55.0,
+      55.0,
+      55.0,
+      55.0,
+      56.0,
+      56.0,
+      56.0,
+      56.0,
+      56.0,
+      57.0,
+      57.0,
+      57.0,
+      57.0,
+      58.0,
+      58.0,
+      58.0,
+      59.0,
+      59.0,
+      59.0,
+      60.0,
+      60.0,
+      60.0,
+      61.0,
+      61.0,
+      62.0,
+      63.0,
+      64.0,
+      65.0,
+      66.0,
+      69.0,
+      84.0
+    ]
+  },
+  "metrics_test": {
+    "r2": 0.759,
+    "rmse": 3.871,
+    "mae": 2.964
+  }
+}
