@@ -1,6 +1,6 @@
 # Loan Risk Score Prediction
 
-Predicts a borrower's risk score (higher = riskier) from loan application data, so a lending company's credit risk team can screen and price applicants quickly and consistently. **[Live app](PASTE_LINK)**
+Predicts a borrower's risk score (higher = riskier) from loan application data, so a lending company's credit risk team can screen and price applicants quickly and consistently.
 
 ## Problem
 
@@ -100,8 +100,3 @@ loan-risk-regression/
 ├─ requirements.txt
 └─ README.md
 ```
-
-## Next steps
-
-- [idea 1]
-- [idea 2]
